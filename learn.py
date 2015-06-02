@@ -1,10 +1,11 @@
 import os
 import re
+from math import log
 
 #load vocabulary
 with open ("vocab", "r") as myfile:
     vocab=set(myfile.read().strip().split('\n'))
-
+vocab_length=len(vocab)
 
 
 #path to training set
@@ -19,6 +20,10 @@ try:
 except ValueError:
 	pass
 
+#count number of training documents
+count=0
+for v in V:
+	count=count+len(os.listdir(training_set+v))
 
 #foreach class V
 for v in V:
@@ -30,7 +35,7 @@ for v in V:
 	except ValueError:
 		pass
 	#P(v_j)
-	probability_vj=len(docs)/count
+	document_frequency=len(docs)/count
 	text_j='';
 	for doc in docs:
 		doc_path=training_set+v+'/'+doc
@@ -56,5 +61,14 @@ for v in V:
 	
 	probabilities=dict()
 
+	for word in vocab:
+		if word in occurences:
+			log_prob=log(occurences[word]+1/vocab_length)
+		else:
+			log_prob=log(1/vocab_length)
+
+		log_prob+=log(document_frequency)
+		probabilities[word]=log_prob
+		print log_prob
 
 
