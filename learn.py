@@ -65,7 +65,8 @@ for v in V:
 		if word in occurences:
 			log_prob=log(occurences[word]+1/vocab_length)
 		else:
-			log_prob=log(1/vocab_length)
+			print 1/vocab_length
+			log_prob=-log(vocab_length)
 
 		log_prob+=log(document_frequency)
 		probabilities[word]=log_prob
