@@ -2,7 +2,7 @@ import os
 import re
 
 #load vocabulary
-with open ("vocabulary.txt", "r") as myfile:
+with open ("vocab", "r") as myfile:
     vocab=myfile.read().strip().split('\n')
 
 
@@ -45,5 +45,4 @@ for v in V:
 	text_j=re.sub(r'([^\s\w]|_)+', '', text_j)
 
 	#substitute all whitespace with
-	text_j=re.sub( '\s+', ' ', text_j ).strip()
-	print text_j
+	text_j=re.sub( '\s+', ' ', text_j ).strip().lower()
