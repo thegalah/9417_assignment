@@ -1,5 +1,4 @@
 import os
-import codecs
 import re
 
 #load vocabulary
