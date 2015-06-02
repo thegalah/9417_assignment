@@ -42,5 +42,9 @@ for v in V:
 		file_string=myfile.read()
 		text_j=text_j+' '+file_string
 
+	#remove non ascii
 	text_j=re.sub(r'([^\s\w]|_)+', '', text_j)
+
+	#substitute all whitespace with
+	text_j=re.sub( '\s+', ' ', text_j ).strip()
 	print text_j
