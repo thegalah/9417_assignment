@@ -3,7 +3,8 @@ import re
 
 #load vocabulary
 with open ("vocab", "r") as myfile:
-    vocab=myfile.read().strip().split('\n')
+    vocab=set(myfile.read().strip().split('\n'))
+
 
 
 #path to training set
@@ -18,10 +19,6 @@ try:
 except ValueError:
 	pass
 
-#count number of training documents
-count=0
-for v in V:
-	count=count+len(os.listdir(training_set+v))
 
 #foreach class V
 for v in V:
@@ -56,4 +53,8 @@ for v in V:
 			occurences[word]+=1
 		else:
 			occurences[word]=1
-	print occurences
+	
+	probabilities=dict()
+
+
+
