@@ -46,3 +46,14 @@ for v in V:
 
 	#substitute all whitespace with
 	text_j=re.sub( '\s+', ' ', text_j ).strip().lower()
+	text_j=text_j.split(' ')
+	#number of text positions or length
+	n=len(text_j)
+	print n
+	occurences=dict()
+	for word in text_j:
+		if word in occurences:
+			occurences[word]+=1
+		else:
+			occurences[word]=1
+	print occurences
