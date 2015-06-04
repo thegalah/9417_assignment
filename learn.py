@@ -11,7 +11,7 @@ vocab_length=len(vocab)
 #path to training set
 training_set='../20news-bydate/20news-bydate-train/'
 #path to test/validation set
-training_set='../20news-bydate/20news-bydate-test/'
+test_set='../20news-bydate/20news-bydate-test/'
 
 #get list of classes
 V=os.listdir(training_set)
@@ -78,3 +78,8 @@ for v in V:
 	learnings[v]=probabilities
 
 #classify test set
+
+#get test sets
+TS=os.listdir(test_set)
+
+print TS
