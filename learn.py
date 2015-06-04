@@ -83,6 +83,7 @@ for cat in TS:
 	docs=os.listdir(test_set+cat)
 	#classify document
 	for doc in docs:
+		doc_count+=1
 		doc_path=test_set+cat+'/'+doc
 		myfile=open(doc_path,'r')
 		file_string=myfile.read()
@@ -93,14 +94,20 @@ for cat in TS:
 		#substitute all whitespace with
 		file_string=re.sub( '\s+', ' ', file_string ).strip().lower()
 		file_string=file_string.split(' ')
-		probabilities=dict()
+		max_prob=0
+		probable_cat='';
 		for v in V:
 			p=0;
 			for word in file_string:
 				if word in learnings[v]:
 					p+=learnings[v][word]
-			probabilities[v]=p
-			print p
+			if max_prob==0 or max_prob<p:
+				max_prob=p
+				probable_cat=v
+
+		if probable_cat==cat:
+			correct+=1
+		print correct,'/',doc_count,'[',((correct/doc_count)*100),'%','correct]'
 
 
 
