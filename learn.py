@@ -2,6 +2,13 @@ import os
 import re
 from math import log
 
+# get dir without hidden directories
+def listdir_nohidden(path):
+    for f in os.listdir(path):
+        if not f.startswith('.'):
+            yield f
+
+
 #load vocabulary
 with open ("vocab", "r") as myfile:
     vocab=set(myfile.read().strip().split('\n'))
@@ -14,13 +21,8 @@ training_set='../20news-bydate/20news-bydate-train/'
 test_set='../20news-bydate/20news-bydate-test/'
 
 #get list of classes
-V=os.listdir(training_set)
+V=os.listdir_nohidden(training_set)
 
-#fix for macos
-try:
-	V.remove('.DS_Store')
-except ValueError:
-	pass
 
 #count number of training documents
 count=0
@@ -33,12 +35,7 @@ for v in V:
 #foreach class V
 for v in V:
 	#get documents
-	docs=os.listdir(training_set+v)
-	#fix for macos
-	try:
-		docs.remove('.DS_Store')
-	except ValueError:
-		pass
+	docs=os.listdir_nohidden(training_set+v)
 	#P(v_j)
 	log_doc_freq=log(len(docs))-log(count)
 	text_j='';
@@ -80,6 +77,7 @@ for v in V:
 #classify test set
 
 #get test sets
-TS=os.listdir(test_set)
+TS=os.listdir_nohidden(test_set)
+
 
 print TS
