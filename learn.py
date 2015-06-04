@@ -24,7 +24,6 @@ except ValueError:
 count=0
 for v in V:
 	count=count+len(os.listdir(training_set+v))
-
 #foreach class V
 for v in V:
 	#get documents
@@ -35,7 +34,7 @@ for v in V:
 	except ValueError:
 		pass
 	#P(v_j)
-	document_frequency=len(docs)/count
+	log_doc_freq=log(len(docs))-log(count)
 	text_j='';
 	for doc in docs:
 		doc_path=training_set+v+'/'+doc
@@ -51,7 +50,7 @@ for v in V:
 	text_j=text_j.split(' ')
 	#number of text positions or length
 	n=len(text_j)
-	print n
+	print 'learning['+str(n)+']:'+v
 	occurences=dict()
 	for word in text_j:
 		if word in occurences:
@@ -63,13 +62,10 @@ for v in V:
 
 	for word in vocab:
 		if word in occurences:
-			log_prob=log(occurences[word]+1/vocab_length)
+			log_prob=log(occurences[word]+1)-log(len(occurences)+vocab_length)
 		else:
-			print 1/vocab_length
-			log_prob=-log(vocab_length)
-
-		log_prob+=log(document_frequency)
+			log_prob=-log(len(occurences)+vocab_length)
+		log_prob+=log_doc_freq
 		probabilities[word]=log_prob
-		print log_prob
 
 
