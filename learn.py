@@ -10,6 +10,8 @@ vocab_length=len(vocab)
 
 #path to training set
 training_set='../20news-bydate/20news-bydate-train/'
+#path to test/validation set
+training_set='../20news-bydate/20news-bydate-test/'
 
 #get list of classes
 V=os.listdir(training_set)
@@ -22,6 +24,10 @@ except ValueError:
 
 #count number of training documents
 count=0
+
+#generate probabilities for the words in the vocab
+learnings=dict();
+
 for v in V:
 	count=count+len(os.listdir(training_set+v))
 #foreach class V
@@ -68,4 +74,7 @@ for v in V:
 		log_prob+=log_doc_freq
 		probabilities[word]=log_prob
 
+	#insert probabilities into learnings
+	learnings[v]=probabilities
 
+#classify test set
