@@ -16,11 +16,7 @@ test_set='../20news-bydate/20news-bydate-test/'
 #get list of classes
 V=os.listdir(training_set)
 
-#fix for macos
-try:
-	V.remove('.DS_Store')
-except ValueError:
-	pass
+
 
 #count number of training documents
 count=0
@@ -34,11 +30,7 @@ for v in V:
 for v in V:
 	#get documents
 	docs=os.listdir(training_set+v)
-	#fix for macos
-	try:
-		docs.remove('.DS_Store')
-	except ValueError:
-		pass
+
 	#P(v_j)
 	log_doc_freq=log(len(docs))-log(count)
 	text_j='';
