@@ -40,12 +40,15 @@ for v in V:
 		file_string=myfile.read()
 		text_j=text_j+' '+file_string
 
+	#clean up text
 	#remove non ascii
 	text_j=re.sub(r'([^\s\w]|_)+', '', text_j)
 
 	#substitute all whitespace with
 	text_j=re.sub( '\s+', ' ', text_j ).strip().lower()
 	text_j=text_j.split(' ')
+
+
 	#number of text positions or length
 	n=len(text_j)
 	print 'learning['+str(n)+']:'+v
@@ -74,4 +77,30 @@ for v in V:
 #get test sets
 TS=os.listdir(test_set)
 
-print TS
+doc_count=0
+correct=0
+for cat in TS:
+	docs=os.listdir(test_set+cat)
+	#classify document
+	for doc in docs:
+		doc_path=test_set+cat+'/'+doc
+		myfile=open(doc_path,'r')
+		file_string=myfile.read()
+		#clean up text
+		#remove non ascii
+		file_string=re.sub(r'([^\s\w]|_)+', '', file_string)
+
+		#substitute all whitespace with
+		file_string=re.sub( '\s+', ' ', file_string ).strip().lower()
+		file_string=file_string.split(' ')
+		probabilities=dict()
+		for v in V:
+			p=0;
+			for word in file_string:
+				if word in learnings[v]:
+					p+=learnings[v][word]
+			probabilities[v]=p
+			print p
+
+
+
