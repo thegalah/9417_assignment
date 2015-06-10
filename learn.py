@@ -104,10 +104,10 @@ for cat in TS:
 			if max_prob==0 or max_prob<p:
 				max_prob=p
 				probable_cat=v
-
+				
 		if probable_cat==cat:
 			correct+=1
-		print correct,'/',doc_count,'[',((correct/doc_count)*100),'%','correct]'
+print correct,'/',doc_count,' documents were correctly classified'
 
 
 
