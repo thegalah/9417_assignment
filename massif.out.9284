@@ -1,0 +1,587 @@
+desc: --depth=1
+cmd: /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python learn.py
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1800746288
+mem_heap_B=24642635
+mem_heap_extra_B=22829
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=4299707231
+mem_heap_B=38683054
+mem_heap_extra_B=66394
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=7629726968
+mem_heap_B=57433803
+mem_heap_extra_B=106149
+mem_stacks_B=0
+heap_tree=detailed
+n6: 57433803 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 25970688 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 16777216 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 8828800 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1000712 0x10003BE5B: list_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 656451 in 112 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=9874573676
+mem_heap_B=62591061
+mem_heap_extra_B=147299
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=13445123936
+mem_heap_B=73133950
+mem_heap_extra_B=178434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=15072765062
+mem_heap_B=83508132
+mem_heap_extra_B=209548
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=17401154331
+mem_heap_B=92677319
+mem_heap_extra_B=240657
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=19742277109
+mem_heap_B=113754243
+mem_heap_extra_B=292869
+mem_stacks_B=0
+heap_tree=detailed
+n5: 113754243 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 61360896 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 28970368 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 17563648 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1659395 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=23508507112
+mem_heap_B=124869740
+mem_heap_extra_B=334036
+mem_stacks_B=0
+heap_tree=detailed
+n6: 124869740 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 64506624 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 33569280 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 17825792 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 3024400 0x10003BE5B: list_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1743708 in 112 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=25968091649
+mem_heap_B=133487443
+mem_heap_extra_B=365157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=28647842729
+mem_heap_B=143537502
+mem_heap_extra_B=396330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=32129816770
+mem_heap_B=165035771
+mem_heap_extra_B=448533
+mem_stacks_B=0
+heap_tree=detailed
+n5: 165035771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 92818176 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 45754016 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 20185088 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 2078555 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=34383551787
+mem_heap_B=163134483
+mem_heap_extra_B=458549
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=37301018288
+mem_heap_B=173156611
+mem_heap_extra_B=489653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=40076684980
+mem_heap_B=182606848
+mem_heap_extra_B=520776
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=43667632116
+mem_heap_B=195551045
+mem_heap_extra_B=551963
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=45660530316
+mem_heap_B=206065487
+mem_heap_extra_B=583081
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=48756989190
+mem_heap_B=225254349
+mem_heap_extra_B=635283
+mem_stacks_B=0
+heap_tree=peak
+n5: 225254349 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 130566912 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 65895584 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 22806528 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1785389 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=50380400283
+mem_heap_B=223350953
+mem_heap_extra_B=645319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=53040910532
+mem_heap_B=223348449
+mem_heap_extra_B=645327
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=56264270993
+mem_heap_B=223412379
+mem_heap_extra_B=645333
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=58258326750
+mem_heap_B=223354030
+mem_heap_extra_B=645330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=60828297109
+mem_heap_B=223429899
+mem_heap_extra_B=645333
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=62683875694
+mem_heap_B=223348357
+mem_heap_extra_B=645355
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=65679667413
+mem_heap_B=223348141
+mem_heap_extra_B=645331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=69268344379
+mem_heap_B=223347630
+mem_heap_extra_B=645330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=72414357803
+mem_heap_B=223348595
+mem_heap_extra_B=645325
+mem_stacks_B=0
+heap_tree=detailed
+n5: 223348595 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 127421184 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 67138560 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 22806528 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1782387 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=74361069322
+mem_heap_B=223383028
+mem_heap_extra_B=645324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=77983054775
+mem_heap_B=223347364
+mem_heap_extra_B=645324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=80359274394
+mem_heap_B=223348319
+mem_heap_extra_B=645329
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=84096431037
+mem_heap_B=223350866
+mem_heap_extra_B=645326
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=86063448065
+mem_heap_B=223348584
+mem_heap_extra_B=645336
+mem_stacks_B=0
+heap_tree=detailed
+n5: 223348584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 127421184 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 67138560 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 22806528 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1782376 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=89976622725
+mem_heap_B=223347942
+mem_heap_extra_B=645322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=92939533654
+mem_heap_B=223351369
+mem_heap_extra_B=645319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=96872943218
+mem_heap_B=223347622
+mem_heap_extra_B=645322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=99835973363
+mem_heap_B=223348590
+mem_heap_extra_B=645330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=101817755047
+mem_heap_B=223350319
+mem_heap_extra_B=645329
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=103781947898
+mem_heap_B=223350807
+mem_heap_extra_B=645337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=106720180026
+mem_heap_B=223347941
+mem_heap_extra_B=645323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=108679686409
+mem_heap_B=223348589
+mem_heap_extra_B=645331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=110677755491
+mem_heap_B=223355325
+mem_heap_extra_B=645331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=112799040027
+mem_heap_B=223366733
+mem_heap_extra_B=645331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=116741687956
+mem_heap_B=223350807
+mem_heap_extra_B=645337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=120659589963
+mem_heap_B=223348343
+mem_heap_extra_B=645337
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=122629285578
+mem_heap_B=223355340
+mem_heap_extra_B=645332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=124694615493
+mem_heap_B=223357708
+mem_heap_extra_B=645332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=126676299333
+mem_heap_B=223355340
+mem_heap_extra_B=645332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=129669416547
+mem_heap_B=223364492
+mem_heap_extra_B=645332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=131631870508
+mem_heap_B=223351110
+mem_heap_extra_B=645338
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=133264044134
+mem_heap_B=223352680
+mem_heap_extra_B=645320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=134911396415
+mem_heap_B=223356448
+mem_heap_extra_B=645328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=136538993894
+mem_heap_B=223350819
+mem_heap_extra_B=645325
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=138497281872
+mem_heap_B=223429907
+mem_heap_extra_B=645325
+mem_stacks_B=0
+heap_tree=detailed
+n5: 223429907 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 127421184 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 67138560 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 22806528 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1863699 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=140130663711
+mem_heap_B=223378971
+mem_heap_extra_B=645317
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=141872123967
+mem_heap_B=223398547
+mem_heap_extra_B=645325
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=143498031597
+mem_heap_B=223349171
+mem_heap_extra_B=645325
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=145121457596
+mem_heap_B=223355433
+mem_heap_extra_B=645335
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=146746396363
+mem_heap_B=223347945
+mem_heap_extra_B=645319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=148369809537
+mem_heap_B=223349783
+mem_heap_extra_B=645329
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=150003121280
+mem_heap_B=223360289
+mem_heap_extra_B=645311
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=151814077553
+mem_heap_B=223382625
+mem_heap_extra_B=645311
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=153442454143
+mem_heap_B=223348761
+mem_heap_extra_B=645319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=155069549720
+mem_heap_B=223348424
+mem_heap_extra_B=645320
+mem_stacks_B=0
+heap_tree=detailed
+n5: 223348424 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 127421184 0x100043688: dictresize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 67138560 0x1000323F9: PyFloat_FromDouble (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 22806528 0x10004B2F3: PyObject_Malloc (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 4199936 0x10004D284: set_table_resize (in /usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Python)
+ n0: 1782216 in 113 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=156713286941
+mem_heap_B=223419544
+mem_heap_extra_B=645320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=158336698082
+mem_heap_B=223372259
+mem_heap_extra_B=645325
+mem_stacks_B=0
+heap_tree=empty
